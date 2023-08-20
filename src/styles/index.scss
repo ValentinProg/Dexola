@@ -1,0 +1,26 @@
+@import "./variables.scss";
+@import "./reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
+
+// font-family: 'Kanit', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.appWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--bg);
+  color: var(--white);
+}
+
+.content {
+  // background: var(--bg);
+  flex-grow: 1;
+  padding: 0 120px;
+}

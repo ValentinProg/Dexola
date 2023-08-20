@@ -1,0 +1,20 @@
+.link {
+  height: 48px;
+  width: 235px;
+  color: var(--white);
+  background: var(--bgLink);
+  font-size: var(--linkFont);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto Mono;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  border: none;
+  gap: 6.5px;
+
+  &:hover {
+    background: #272a2ee5;
+  }
+}
