@@ -3,9 +3,6 @@ import styles from "./TopNFTs.module.scss";
 
 const TopNFTs = () => {
 
-
-
-    
   return (
     <>
       <SectionTitle sectionTitleNumber="02">Top NFTs</SectionTitle>
