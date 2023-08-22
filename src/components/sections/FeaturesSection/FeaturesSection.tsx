@@ -1,17 +1,17 @@
-import styles from "./Features.module.scss";
-import SectionTitle from "../UI/SectionTitle/SectionTitle";
-import Card from "../UI/Card/Card";
-import cardImg1 from "../../assets/cardImg1.png";
-import cardImg2 from "../../assets/cardImg2.png";
-import cardImg3 from "../../assets/cardImg3.png";
+import styles from "./FeaturesSection.module.scss";
+import SectionTitle from "../../UI/SectionTitle/SectionTitle";
+import Card from "../../UI/Card/Card";
+import cardImg1 from "../../../assets/cardImg1.png";
+import cardImg2 from "../../../assets/cardImg2.png";
+import cardImg3 from "../../../assets/cardImg3.png";
 
-const Feautures = () => {
+const FeauturesSection = () => {
   return (
     <>
-      <SectionTitle sectionTitleNumber={"01"}>Feautures</SectionTitle>
+      <SectionTitle sectionTitleNumber={"01"}>Features</SectionTitle>
       <section className={styles.feautures}>
         <div className={styles.featuresInfo}>
-          <span className={styles.featuresInfoTitle}>About StarRunner</span>
+          <h2 className={styles.featuresInfoTitle}>About StarRunner</h2>
           <div className={styles.featuresInfoContent}>
             The StarRunner Blockchain Ecosystem isn't
             <br />a mere playground; it's a living, evolving entity
@@ -46,4 +46,4 @@ const Feautures = () => {
   );
 };
 
-export default Feautures;
+export default FeauturesSection;

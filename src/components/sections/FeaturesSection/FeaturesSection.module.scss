@@ -1,5 +1,7 @@
 .feautures{
     margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
 }
 
 .featuresInfo {
@@ -9,17 +11,15 @@
 }
 
 .featuresInfoTitle {
-  font-family: Kanit;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-subtitle);
   letter-spacing: -0.48px;
   margin-right: 24px;
 }
 
 .featuresInfoContent {
-  color: var(--lightGrey);
-  font-family: Roboto Mono;
-  font-size: 18px;
+  color: var(--fc-secondary);
+  font-size: var(--fs-body);
   letter-spacing: -0.36px;
   margin-top: 6px;
 }

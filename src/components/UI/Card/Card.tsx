@@ -18,10 +18,10 @@ const Card = ({
     <div className={styles.cardWrapper}>
       <img src={cardImgName} className={styles.cardImg} />
       <div className={styles.cardContent}>
-        <div className={styles.cardTitle}>
+        <h2 className={styles.cardTitle}>
           <span className={styles.cardTitleNumber}>{cardTitleNumber}</span>
           <span>{cardTitle}</span>
-        </div>
+        </h2>
         <div className={styles.cardText}>{children}</div>
         <Link anchor="">DISCOVER NOW</Link>
       </div>

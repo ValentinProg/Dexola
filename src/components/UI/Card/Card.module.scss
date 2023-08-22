@@ -1,7 +1,7 @@
 .cardWrapper {
-  width: 373px;
-  height: 565px;
-  border: 1px solid var(--accentBlue);
+  max-width: 373px;
+  max-height: 565px;
+  border: 1px solid var(--border-blue);
 
   a {
     width: 309px;
@@ -18,9 +18,8 @@
 }
 
 .cardTitle {
-  font-family: Kanit;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-subtitle);
 }
 
 .cardTitleNumber {
@@ -29,8 +28,7 @@
 
 .cardText {
   padding: 16px 0px;
-  color: var(--lightGrey);
-  font-family: Roboto Mono;
+  color: var(--fc-secondary);
   font-size: 18px;
   letter-spacing: -0.36px;
   width: 344px;

@@ -6,21 +6,33 @@
 // font-family: 'Roboto', sans-serif;
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
+  background: var(--bg-main);
+  color: var(--fc-main);
+  font-size: (--fs-body);
+}
+
+h1, h2, h3, h4 {
+font-family: Kanit;
+}
+
+a {
+  color: var(--fc-main);
 }
 
 .appWrapper {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 1440px;
+ 
   margin: 0 auto;
-  background: var(--bg);
-  color: var(--white);
 }
 
 .content {
-  // background: var(--bg);
+  
+  // max-width: 1440px;
+  
   flex-grow: 1;
   padding: 0 120px;
 }

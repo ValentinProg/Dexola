@@ -1,26 +1,49 @@
 :root {
-    --white: #FFF;
-    --black: #000;
-    --accentBlue: #204FFE;
-    --darkGrey: #2F2F2F;
-    --lightGrey: #B3B3B3;
-    --bg: #060412;
-    --bgLink: #272A2E;
-    --warningRose: #EB3795;
+    //background color
+    --bg-main: #060412;
+    --bg-link: #272A2E;
+    --bg-table: #080B27;
 
+    //font color
+    --fc-main: #FFF;
+    --fc-secondary:#B3B3B3;
+    
+    //border color
+    --border-blue:#204FFE;
 
-    --titleWebFont: 112px;
-    --titleTabletFont: 112px;
-    --titleMobileFont: 48px;
+    //warning color
+    --warning-rose: #EB3795;
 
-    --subTitleWebFont: 24px;
-    --subTitleTabletFont: 20px;
-    --subTitleMobileFont: 18px;
+    // fonts
+    --ff-primary: "Roboto Mono", sans-serif;
+    --ff-secondary: 'Kanit', sans-serif;
 
-    --bodyWebFont: 24px;
-    --bodyTabletFont: 20px;
-    --bodyMobileFont: 18px;
+    // title fonts
+    --fw-title: 400;
+    --fw-subtitle: 500;
 
-    --linkFont: 16px;
+    --fs-title: 140px;
+    --lh-title: 140px;
+
+    --fs-subtitle: 24px;
+    --lh-subtitle: 140px;
+
+    // body fonts
+    --fs-body: 18px;
+    --lh-body: normal;
+
+    // btn fonts
+    --fs-link: 16px;
+    --lh-link: 24px;
 }
 
+
+// --white: #FFF;
+    // --black: #000;
+    // --accentBlue: #204FFE;
+    // --darkGrey: #2F2F2F;
+    // --lightGrey: #B3B3B3;
+    // --bg: #060412;
+    // --bgLink: #272A2E;
+    // --bgTable: #080B27;
+    // --warningRose: #EB3795;

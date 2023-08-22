@@ -1,21 +1,33 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import HeroSection from "./components/HeroSection/HeroSection";
-import Feautures from "./components/Features/Features";
-import TopNFTs from "./components/TopNFTs/TopNFTs";
+import HeroSection from "./components/sections/HeroSection/HeroSection";
+import FeauturesSection from "./components/sections/FeaturesSection/FeaturesSection";
+import TopNFTsSection from "./components/sections/TopNFTsSection/TopNFTsSection";
+import JoinUsSection from "./components/sections/JoinUsSection/JoinUsSection";
 
 const App = () => {
   return (
-    <div className='appWrapper'>
+    <div className="appWrapper">
       <Header />
-      <main className='content'>
-        <HeroSection/>
-        <Feautures/>
-        <TopNFTs/>
-        <h1>Join US 03</h1>
+      <main className="content">
+        <HeroSection />
+        <FeauturesSection />
+        <TopNFTsSection />
+        <JoinUsSection/>
       </main>
       <Footer />
     </div>
+
+    // <div className="appWrapper">
+    //   <main className="content">
+    //     <Header />
+    //     <HeroSection />
+    //     <Feautures />
+    //     <TopNFTs />
+    //     <h1>Join US 03</h1>
+    //     <Footer />
+    //   </main>
+    // </div>
   );
 };
 

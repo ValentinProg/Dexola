@@ -8,9 +8,10 @@ interface LinkProps {
 }
 
 
-
 const Link = ({ children, imgName, anchor }: LinkProps) => {
 const linkImg = imgName === undefined ? arrowImg : imgName
+// const linkImg = imgName ?? arrowImg
+
   return (
     <a href={anchor} className={styles.link}>
       <img src={linkImg} />
