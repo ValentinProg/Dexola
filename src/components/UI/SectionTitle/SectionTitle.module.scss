@@ -2,14 +2,10 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--fc-main);
-  line-height: 140px;
+  line-height: var(--lh-title);
   padding: 48px 0px 16px 0px;
   margin-bottom: 90px;
- 
-  h2 {
-    font-size: var(--fs-title);
-    font-weight: var(--fw-title);
-  }
+
+  font-size: var(--fs-title);
+  font-weight: var(--fw-title);
 }
-
-

@@ -1,0 +1,32 @@
+.joinUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-bottom: 113px;
+   
+}
+
+.joinUsInfo {
+    height: 240px;
+    width: 538px;
+    
+    
+}
+
+.joinUsForm {
+    
+    height: 495px;
+    width: 600px;
+    border: 1px solid var(--border-blue);
+    padding: 55px 40px;
+        
+}
+
+.joinUsInfoContent {
+    margin: 16px 0px 16px 0px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}

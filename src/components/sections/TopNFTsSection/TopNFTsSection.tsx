@@ -12,11 +12,11 @@ const TopNFTsSection = () => {
           <thead>
             <tr>
               <th></th>
-              <th>NFT Name</th>
-              <th>Rarity Level</th>
-              <th>Total games</th>
-              <th>Games Won</th>
-              <th>Price(ETH)</th>
+              <th><h3>NFT Name</h3></th>
+              <th><h3>Rarity Level</h3></th>
+              <th><h3>Total games</h3></th>
+              <th><h3>Games Won</h3></th>
+              <th><h3>Price(ETH)</h3></th>
             </tr>
           </thead>
           <tbody>

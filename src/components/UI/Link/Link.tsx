@@ -4,16 +4,16 @@ import arrowImg from '../../../assets/arrow.svg'
 interface LinkProps {
   children: React.ReactNode;
   imgName?: string;
-  anchor: string;
+  to?: string;
 }
 
 
-const Link = ({ children, imgName, anchor }: LinkProps) => {
+const Link = ({ children, imgName, to }: LinkProps) => {
 const linkImg = imgName === undefined ? arrowImg : imgName
 // const linkImg = imgName ?? arrowImg
 
   return (
-    <a href={anchor} className={styles.link}>
+    <a href={to} className={styles.link}>
       <img src={linkImg} />
       {children}
     </a>

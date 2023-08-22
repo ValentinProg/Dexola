@@ -7,10 +7,10 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ children, sectionTitleNumber }: SectionTitleProps) => {
   return (
-    <div className={styles.sectionTitle}>
-      <h2>{children}</h2>
-      <h2>{sectionTitleNumber}</h2>
-    </div>
+    <h2 className={styles.sectionTitle}>
+      <span>{children}</span>
+      <span>{sectionTitleNumber}</span>
+    </h2>
   );
 };
 

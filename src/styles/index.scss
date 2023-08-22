@@ -1,23 +1,32 @@
 @import "./variables.scss";
 @import "./reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap');
-
-// font-family: 'Kanit', sans-serif;
-// font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap");
 
 body {
   font-family: "Roboto Mono", sans-serif;
   background: var(--bg-main);
   color: var(--fc-main);
-  font-size: (--fs-body);
+  font-size: var(--fs-body);
+  letter-spacing: -0.36px;
 }
 
-h1, h2, h3, h4 {
-font-family: Kanit;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Kanit";
+  color: var(--fc-secondary);
+}
+
+h3 {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-subtitle);
+  letter-spacing: -0.48px;
+  line-height: 140%;
 }
 
 a {
-  color: var(--fc-main);
+  color: var(--fc-secondary);
 }
 
 .appWrapper {
@@ -25,14 +34,13 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
- 
+
   margin: 0 auto;
 }
 
 .content {
-  
   // max-width: 1440px;
-  
+
   flex-grow: 1;
   padding: 0 120px;
 }

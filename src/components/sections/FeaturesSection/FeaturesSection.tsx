@@ -11,7 +11,7 @@ const FeauturesSection = () => {
       <SectionTitle sectionTitleNumber={"01"}>Features</SectionTitle>
       <section className={styles.feautures}>
         <div className={styles.featuresInfo}>
-          <h2 className={styles.featuresInfoTitle}>About StarRunner</h2>
+          <h3 className={styles.featuresInfoTitle}>About StarRunner</h3>
           <div className={styles.featuresInfoContent}>
             The StarRunner Blockchain Ecosystem isn't
             <br />a mere playground; it's a living, evolving entity

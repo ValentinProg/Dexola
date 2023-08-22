@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <img src={logo} />
-      <Link anchor="#">Join Now</Link>
+      <Link to="#">Join Now</Link>
     </header>
   );
 };
