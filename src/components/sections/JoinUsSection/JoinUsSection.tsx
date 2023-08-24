@@ -1,8 +1,7 @@
 import SectionTitle from '../../UI/SectionTitle/SectionTitle';
 import styles from './JoinUsSection.module.scss'
 import arrowLine from '../../../assets/arrowLine.svg'
-import Link from '../../UI/Link/Link';
-import line from '../../../assets/line.svg'
+import Form from '../../UI/Form/Form';
 
 
 
@@ -18,15 +17,7 @@ const JoinUsSection = () => {
             </div>
             <img src={arrowLine} alt="arrowLine" />
         </div>
-        <div className={styles.joinUsForm}>
-            <form action="">
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <Link imgName={line}>Send it</Link>
-            </form>
-        </div>
+            <Form/>
      </section>
      </>
     );

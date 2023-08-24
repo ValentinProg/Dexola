@@ -1,0 +1,70 @@
+.joinUsForm {
+
+  border: 1px solid var(--border-blue);
+  padding: 55px 40px;
+}
+
+.email,
+.phone,
+.password,
+.confirmPassword {
+  height: 70px;
+  margin-bottom: 16px;
+}
+
+.shownPassworEye {
+  width: 24px;
+  height: 24px;
+}
+
+.emailInput,
+.phoneInput,
+.passwordInput,
+.confirmPasswordInput {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  width: 520px;
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.passwordInput,
+.confirmPasswordInput {
+  justify-content: space-between;
+}
+
+.passwordInputContent,
+.confirmPasswordInputContent {
+  display: flex;
+}
+
+form {
+  
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.error {
+  color: var(--warning-rose);
+  font-size: var(--fs-error);
+  font-weight: var(--fw-error);
+  line-height: var(--lh-error);
+  letter-spacing: var(--ls-error);
+}
+
+.inputStar {
+  margin-right: 20px;
+}
+.inputCountry {
+  margin-right: 10px;
+}
