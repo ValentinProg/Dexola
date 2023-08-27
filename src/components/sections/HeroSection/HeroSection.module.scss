@@ -1,8 +1,113 @@
 .heroSection {
+  height: 732px;
+}
+
+.heroSectionContent {
+  padding: 0px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 311px;
+  border-top: 1px solid var(--border-blue);
+  border-bottom: 1px solid var(--border-blue);
+}
+
+.heroText {
+  color: var(--fc-secondary);
+  width: 640px;
+  // padding: 160px 70px 56px 24px;
+  margin-bottom: 56px;
+}
+
+.heroImages {
+  border: 1px solid var(--border-blue);
+  display: flex;
+  // img:first-child {
+  //   border-right: 1px solid var(--border-blue);
+  // }
+  justify-content: center;
+  align-items: center;
+}
+
+.firstBlockImg {
+  height: 311px;
+  width: 233px;
+  background: url(/src/assets/b1i1.png);
+  animation: firstBlockImg 10s infinite;
+  border-right:  1px solid var(--border-blue);
+}
+
+@keyframes firstBlockImg {
+  0% {
+    background: url(/src/assets/b1i1.png);
+  }
+  20% {
+    background: url(/src/assets/b1i2.png);
+  }
+  40% {
+    background: url(/src/assets/b1i3.png);
+  }
+  60% {
+    background: url(/src/assets/b1i4.png);
+  }
+  80% {
+    background: url(/src/assets/b1i5.png) no-repeat;
+  }
+}
+
+.secondBlockImg {
+  width: 233px;
+  height: 311px;
+  background: url(/src/assets/b2i1.png);
+  animation: secondBlockImg 12s infinite;
+}
+
+@keyframes secondBlockImg {
+  0% {
+    background: url(/src/assets/b2i1.png);
+  }
+  20% {
+    background: url(/src/assets/b2i2.png);
+  }
+  40% {
+    background: url(/src/assets/b2i3.png);
+  }
+  60% {
+    background: url(/src/assets/b2i4.png);
+  }
+  80% {
+    background: url(/src/assets/b2i5.png) no-repeat;
+  }
+}
+
+.heroTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 426px;
+  width: 100%;
+  overflow: hidden;
+
+  div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: silver;
-    height: 732px;
+    width: 200%;
+    animation: heroTitle 8s linear infinite;
+  }
+}
+
+.runningLine {
+  font-size: 340px;
+  line-height: 125.4%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes heroTitle {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

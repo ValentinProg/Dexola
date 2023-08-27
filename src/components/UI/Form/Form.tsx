@@ -6,6 +6,8 @@ import openEye from '../../../assets/eye-open.svg'
 import closeEye from '../../../assets/eye-closed.svg'
 import star from '../../../assets/formStar.svg'
 import country from '../../../assets/country.png'
+import { regEmail } from "../../../constants/constants";
+import { regPhone } from "../../../constants/constants";
 
 const Form = () => {
 
@@ -20,6 +22,7 @@ const Form = () => {
     const [password, setPassword] = useState('')
     const [passwordDirty, setPasswordDirty] = useState(false)
     const [passwordError, setPasswordError] = useState('Please complete this field')
+
     const [passwordShown, setPasswordShown] = useState(false);
 
   
@@ -29,14 +32,10 @@ const Form = () => {
     const [confirmPasswordShown, setConfirmPasswordShown] = useState(false);
 
 
-   
 
 
-
- 
     const emailHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value)
-       const regEmail = (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
       if (!regEmail.test(String(e.target.value).toLowerCase())) {
         setEmailError('Is not valid email')
       } else {
@@ -46,7 +45,7 @@ const Form = () => {
 
     const phoneHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPhone(e.target.value)
-        const regPhone = (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
+        
         if (!regPhone.test(String(e.target.value).toLowerCase())) {
           setPhoneError('wrong phone')
             if(!e.target.value){
@@ -58,7 +57,7 @@ const Form = () => {
     }
 
     
-    const passwordHandler = (e:any) => {
+    const passwordHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
      setPassword(e.target.value)
      if (e.target.value.length < 3 || e.target.value.length > 8) {
         setPasswordError('Please complete')
@@ -70,7 +69,7 @@ const Form = () => {
      }
     }
 
-    const confirmPasswordHandler = (e:any) => {
+    const confirmPasswordHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setConfirmPassword(e.target.value)
         if (e.target.value !== password) {
            setConfirmPasswordError('Please complete ')
@@ -102,16 +101,15 @@ const borderStyleForError = (stateDirty: boolean, stateError: string) => {
       <form  onSubmit={(e) => {
         e.preventDefault();
       }} className={styles.joinUsForm}>
+        
        <div className={styles.email}>
            <div className={styles.emailInput} style={{borderBottomColor: borderStyleForError(emailDirty, emailError)}}>
             {emailError &&  <img src={star} className={styles.inputStar}/>}
                <input onChange={e =>emailHandler(e)} onBlur={() => emailBlurHandler()} value={email} placeholder="Enter email" name='email' type="text" />
           </div>
-       
         {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div>}
-        
        </div>
-       {/* style={{ borderBottom: '1px solid var(--warning-rose)'}} */}
+
        <div className={styles.phone} >
             <div className={styles.phoneInput} style={{borderBottomColor: borderStyleForError(phoneDirty, phoneError)}}>
                 <img src={country} className={styles.inputCountry} /> 
@@ -141,14 +139,6 @@ const borderStyleForError = (stateDirty: boolean, stateError: string) => {
            </div>
            {(confirmPasswordDirty && confirmPasswordError) && <div className={styles.error}>{confirmPasswordError}</div>}
        </div>
-
-
-       
-      
-
-       
-
-
         <Link imgName={line}>Send it</Link>
       </form>
   

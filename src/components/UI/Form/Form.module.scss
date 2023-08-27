@@ -1,5 +1,4 @@
 .joinUsForm {
-
   border: 1px solid var(--border-blue);
   padding: 55px 40px;
 }
@@ -42,17 +41,15 @@
   display: flex;
 }
 
-form {
-  
-}
-
 input {
-  color: white;
+  color: var(--fc-secondary);
   background-color: transparent;
   border: none;
   margin-bottom: 10px;
   outline: none;
 }
+
+
 
 .error {
   color: var(--warning-rose);
