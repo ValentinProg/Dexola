@@ -1,4 +1,4 @@
-.feautures{
+.feautures {
     margin-bottom: 65px;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,11 @@
 }
 
 .feautureCards {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // gap: 40px;
+  
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: 40px;
+justify-content: center;
 }

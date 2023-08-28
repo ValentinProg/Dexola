@@ -1,11 +1,10 @@
 import styles from "./HeroSection.module.scss";
-import img5 from "../../../assets/5.png";
-import b1Img1 from "../../../assets/b1i1.png";
-import b1Img2 from "../../../assets/b1i2.png";
-import b1Img3 from "../../../assets/b1i3.png";
-import b1Img4 from "../../../assets/b1i4.png";
-import b1Img5 from "../../../assets/b1i5.png";
-
+// import img5 from "../../../assets/5.png";
+// import b1Img1 from "../../../assets/b1i1.png";
+// import b1Img2 from "../../../assets/b1i2.png";
+// import b1Img3 from "../../../assets/b1i3.png";
+// import b1Img4 from "../../../assets/b1i4.png";
+// import b1Img5 from "../../../assets/b1i5.png";
 
 const HeroSection = () => {
   return (
@@ -18,7 +17,6 @@ const HeroSection = () => {
         </div>
         <div className={styles.heroImages}>
           <div className={styles.firstBlockImg}>
-
             {/* <div className={styles.firstImg}>
             <img src={b1Img1} />
             </div>
@@ -34,13 +32,8 @@ const HeroSection = () => {
             <div className={styles.fifthImg}>
             <img src={b1Img5} />
             </div> */}
-            
           </div>
-
-
-          <div className={styles.secondBlockImg}>
-           
-          </div>
+          <div className={styles.secondBlockImg}></div>
         </div>
       </div>
       <div className={styles.heroTitle}>

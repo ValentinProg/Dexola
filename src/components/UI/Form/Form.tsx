@@ -8,6 +8,9 @@ import star from '../../../assets/formStar.svg'
 import country from '../../../assets/country.png'
 import { regEmail } from "../../../constants/constants";
 import { regPhone } from "../../../constants/constants";
+import { regPassword } from "../../../constants/constants";
+import { validationWithReg } from "../../../helpers/helpers";
+import { borderStyleForError } from "../../../helpers/helpers";
 
 const Form = () => {
 
@@ -31,44 +34,6 @@ const Form = () => {
     const [confirmPasswordError, setConfirmPasswordError] = useState('Please complete this field')
     const [confirmPasswordShown, setConfirmPasswordShown] = useState(false);
 
-
-
-
-    const emailHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value)
-      if (!regEmail.test(String(e.target.value).toLowerCase())) {
-        setEmailError('Is not valid email')
-      } else {
-        setEmailError('')
-      }  
-    }
-
-    const phoneHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setPhone(e.target.value)
-        
-        if (!regPhone.test(String(e.target.value).toLowerCase())) {
-          setPhoneError('wrong phone')
-            if(!e.target.value){
-              setPhoneError('')
-            }
-          } else {
-            setPhoneError('')
-          }  
-    }
-
-    
-    const passwordHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-     setPassword(e.target.value)
-     if (e.target.value.length < 3 || e.target.value.length > 8) {
-        setPasswordError('Please complete')
-        if(!e.target.value){
-            setPasswordError('')
-        }
-     } else {
-        setPasswordError('')
-     }
-    }
-
     const confirmPasswordHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setConfirmPassword(e.target.value)
         if (e.target.value !== password) {
@@ -81,8 +46,6 @@ const Form = () => {
         }
        }
        
-
-
     const emailBlurHandler = () => {
       setEmailDirty(true)
       setPasswordDirty(true)
@@ -91,9 +54,7 @@ const Form = () => {
     }   
 
 
-const borderStyleForError = (stateDirty: boolean, stateError: string) => {
-   return `${(stateDirty && stateError ) && 'var(--warning-rose)'}`
-}
+
 
 
   return (
@@ -104,41 +65,51 @@ const borderStyleForError = (stateDirty: boolean, stateError: string) => {
         
        <div className={styles.email}>
            <div className={styles.emailInput} style={{borderBottomColor: borderStyleForError(emailDirty, emailError)}}>
+
             {emailError &&  <img src={star} className={styles.inputStar}/>}
-               <input onChange={e =>emailHandler(e)} onBlur={() => emailBlurHandler()} value={email} placeholder="Enter email" name='email' type="text" />
+               <input onChange={e => validationWithReg(e,regEmail,setEmail,setEmailError,'Is not valid email')} onBlur={() => emailBlurHandler()} value={email} placeholder="Enter email" name='email' type="text" />
           </div>
+
         {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div>}
        </div>
 
        <div className={styles.phone} >
             <div className={styles.phoneInput} style={{borderBottomColor: borderStyleForError(phoneDirty, phoneError)}}>
+
                 <img src={country} className={styles.inputCountry} /> 
-                <input onChange={e =>phoneHandler(e)} onBlur={() => emailBlurHandler()} value={phone}  placeholder='+38(0__) ___ __ __' name='phone' type="phone" />
+                <input onChange={e =>validationWithReg(e,regPhone,setPhone,setPhoneError,'wrong phone')} onBlur={() => emailBlurHandler()} value={phone}  placeholder='+38(0__) ___ __ __' name='phone' type="phone" />
       </div>
+
         {(phoneDirty && phoneError) && <div className={styles.error}>{phoneError}</div>}
        </div>
 
        <div className={styles.password}>
             <div className={styles.passwordInput} style={{borderBottomColor: borderStyleForError(passwordDirty, passwordError)}}>
+                
                 <div className={styles.passwordInputContent}>
                 {passwordError &&  <img src={star} className={styles.inputStar} style={{borderBottomColor: borderStyleForError(passwordDirty, passwordError)}}/>}
-                     <input onChange={e =>passwordHandler(e)} onBlur={() => emailBlurHandler()} value={password} placeholder="Password" name='password' type={passwordShown ? "text" : "password"} />
+                     <input onChange={e =>validationWithReg(e,regPassword,setPassword,setPasswordError,'Please complete')} onBlur={() => emailBlurHandler()} value={password} placeholder="Password" name='password' type={passwordShown ? "text" : "password"} />
                 </div>
                 <button onClick={ () => setPasswordShown(!passwordShown)}><img className={styles.shownPassworEye} src={passwordShown ? openEye : closeEye}/></button>
             </div>
+
             {(passwordDirty && passwordError) && <div className={styles.error}>{passwordError}</div>}
        </div>
 
        <div className={styles.confirmPassword}>
            <div className={styles.confirmPasswordInput} style={{borderBottomColor: borderStyleForError(confirmPasswordDirty, confirmPasswordError)}}>
+               
                <div className={styles.confirmPasswordInputContent}>
                {confirmPasswordError &&  <img src={star} className={styles.inputStar}/>}
                     <input onChange={e =>confirmPasswordHandler(e)} onBlur={() => emailBlurHandler()} value={confirmPassword} placeholder="Confirm password" name='confirmpassword' type={confirmPasswordShown ? "text" : "password"} />
                </div>
                <button onClick={ () => setConfirmPasswordShown(!confirmPasswordShown)}><img className={styles.shownPassworEye} src={confirmPasswordShown ? openEye : closeEye}/></button>
            </div>
+
            {(confirmPasswordDirty && confirmPasswordError) && <div className={styles.error}>{confirmPasswordError}</div>}
        </div>
+
+       
         <Link imgName={line}>Send it</Link>
       </form>
   

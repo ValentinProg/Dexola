@@ -28,7 +28,11 @@ const FeauturesSection = () => {
             The StarRunner Token the exclusive crypto currency fueling the
             adventure of the Play-to-Earn sensation.
           </Card>
-          <Card cardImgName={cardImg2} cardTitleNumber="02" cardTitle="Staking">
+          <Card 
+            cardImgName={cardImg2} 
+            cardTitleNumber="02" 
+            cardTitle="Staking"
+          >
             Join a thriving community <br /> of stakers, united by their passion
             for exploration, strategy, and gaming.
           </Card>

@@ -1,6 +1,6 @@
 import SectionTitle from "../../UI/SectionTitle/SectionTitle";
 import styles from "./TopNFTsSection.module.scss";
-import NFTs from "../../../constants/constants";
+import { NFTs } from "../../../constants/constants";
 
 const TopNFTsSection = () => {
   return (
@@ -12,7 +12,7 @@ const TopNFTsSection = () => {
           <thead>
             <tr>
               <th></th>
-              <th><h3>NFT Name</h3></th>
+              <th className="textSubtitle">NFT Name</th>
               <th><h3>Rarity Level</h3></th>
               <th><h3>Total games</h3></th>
               <th><h3>Games Won</h3></th>

@@ -16,14 +16,20 @@ const Card = ({
 }: CardProps) => {
   return (
     <div className={styles.cardWrapper}>
-      <img src={cardImgName} className={styles.cardImg} />
+      
+      <div className={styles.imgContainer}>
+        <img src={cardImgName} className={styles.cardImg} />
+      </div>
       <div className={styles.cardContent}>
         <h3>
           <span className={styles.cardTitleNumber}>{cardTitleNumber}</span>
           <span>{cardTitle}</span>
         </h3>
         <div className={styles.cardText}>{children}</div>
-        <Link to="">DISCOVER NOW</Link>
+       
+      </div>
+      <div className={styles.cardTextLink}>
+      <Link to="">DISCOVER NOW</Link>
       </div>
     </div>
   );
