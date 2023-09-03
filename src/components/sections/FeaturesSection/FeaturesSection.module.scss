@@ -1,7 +1,6 @@
 .feautures {
     margin-bottom: 65px;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .featuresInfo {
@@ -19,11 +18,17 @@
 }
 
 .feautureCards {
-  // display: flex;
-  // gap: 40px;
-  
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 column-gap: 40px;
 justify-content: center;
+}
+
+@media (max-width: 1268px) {
+  .feautureCards {
+   
+    column-gap: 16px;
+   
+    }
+  
 }

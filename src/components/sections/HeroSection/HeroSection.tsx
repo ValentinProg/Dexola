@@ -17,19 +17,19 @@ const HeroSection = () => {
         </div>
         <div className={styles.heroImages}>
           <div className={styles.firstBlockImg}>
-            {/* <div className={styles.firstImg}>
-            <img src={b1Img1} />
+               {/* <div className={styles.image}>
+                 <img src={b1Img1} />
             </div>
-            <div className={styles.secondImg}>
-            <img src={b1Img2} />
+                <div className={styles.image}>
+                 <img src={b1Img2} />
             </div>
-            <div className={styles.thirdImg}>
+            <div className={styles.image}>
             <img src={b1Img3} />
             </div>
-            <div className={styles.fourthImg}>
+            <div className={styles.image}>
             <img src={b1Img4} />
             </div>
-            <div className={styles.fifthImg}>
+            <div className={styles.image}>
             <img src={b1Img5} />
             </div> */}
           </div>

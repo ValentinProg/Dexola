@@ -1,15 +1,45 @@
 .joinUs {
   display: flex;
   margin-bottom: 125px;
-  justify-content: space-between;
+ 
 }
 
 .joinUsInfo {
-  margin-top: 20px;
- 
-  width: 538px; /// поменять
+  width: 100%;
+  max-width: 540px;
+ padding: 20px 66px 0px 0px;
+
 }
 
 .joinUsInfoContent {
   margin: 16px 0px 16px 0px;
+}
+
+
+
+@media (max-width:992px) {
+  .joinUs {
+    display: block;
+
+   }
+
+   .arrowLine {
+    display: none;
+   }
+
+   .joinUsInfo {
+    margin-bottom: 56px;
+   }
+
+   .joinUsInfoContent {
+    max-width: 630px;
+   }
+}
+
+@media(max-width: 650px) {
+
+
+  .joinUsInfoContent {
+    max-width: 327px;
+   }
 }

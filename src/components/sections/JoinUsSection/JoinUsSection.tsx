@@ -15,7 +15,8 @@ const JoinUsSection = () => {
             Discover the full range of our services that cater to your needs.
             We've got you covered with top-notch solutions.
           </div>
-          <img src={arrowLine} alt="arrowLine" />
+          
+          <img src={arrowLine} alt="arrowLine" className={styles.arrowLine}/>
         </div>
         <Form />
       </section>

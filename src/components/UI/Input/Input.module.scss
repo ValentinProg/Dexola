@@ -1,0 +1,48 @@
+.wrapperInput {
+  padding-bottom: 44px;
+}
+
+.shownPassworEye {
+  min-width: 24px;
+}
+
+.inputBlock {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+input {
+  background-color: transparent;
+  color: var(--fc-secondary);
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+
+
+
+
+
+.error {
+  color: var(--warning-rose);
+  font-size: var(--fs-error);
+  font-weight: var(--fw-error);
+  line-height: var(--lh-error);
+  letter-spacing: var(--ls-error);
+
+  position: absolute;
+}
+
+.inputStar {
+  margin-right: 20px;
+}
+
+
+

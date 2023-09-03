@@ -2,6 +2,10 @@ import SectionTitle from "../../UI/SectionTitle/SectionTitle";
 import styles from "./TopNFTsSection.module.scss";
 import { NFTs } from "../../../constants/constants";
 
+
+
+
+
 const TopNFTsSection = () => {
   return (
     <>
@@ -12,7 +16,8 @@ const TopNFTsSection = () => {
           <thead>
             <tr>
               <th></th>
-              <th className="textSubtitle">NFT Name</th>
+              {/* <th className="textSubtitle">NFT Name</th> */}
+              <th><h3>NFT Name</h3></th>
               <th><h3>Rarity Level</h3></th>
               <th><h3>Total games</h3></th>
               <th><h3>Games Won</h3></th>
@@ -22,16 +27,18 @@ const TopNFTsSection = () => {
           <tbody>
             {NFTs.map((NFT) => (
               <tr key={NFT.id}>
-                <td data-cell="avatar">
+                <td>
                   <img src={NFT.avatar} className={styles.avatar} />
                 </td>
-                <td data-cell="name">{NFT.name}</td>
-                <td data-cell="level">{NFT.level}</td>
-                <td data-cell="games">{NFT.games}</td>
-                <td data-cell="wins">{NFT.wins}</td>
+                <td data-cell="name" id="idPrice">{NFT.name}</td>
+                <td data-cell="rarity">{NFT.level}</td>
+                <td data-cell="total games">{NFT.games}</td>
+                <td data-cell="games won">{NFT.wins}</td>
                 <td data-cell="price">{NFT.price}</td>
               </tr>
-            ))}
+            ))
+            
+            }
           </tbody>
         </table>
       </div>

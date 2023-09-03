@@ -1,11 +1,11 @@
 .link {
-  // height: 48px;
-  // width: 235px;
-  padding: 12px 67px;
+  padding: 12px 66px;
   background: var(--bg-link);
   display: flex;
   justify-content: center;
   align-items: center;
+white-space: nowrap;
+
 
 
   font-weight: var(--fw-subtitle);
@@ -20,4 +20,13 @@
   &:hover {
     background: #272a2ee5;
   }
+}
+
+
+
+@media (max-width:992px) {
+ .link {
+  
+ }
+
 }

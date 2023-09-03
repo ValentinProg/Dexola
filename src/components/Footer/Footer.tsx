@@ -10,8 +10,8 @@ const Footer = () => {
           const { to, imgPath, id, name } = item;
 
           return (
-            <a href={to} key={id}>
-              <img src={imgPath} alt={name} />
+            <a href={to} key={id} >
+              <img src={imgPath} alt={name} className={styles.contactsImg}/>
             </a>
           );
         })}
