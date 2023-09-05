@@ -25,13 +25,16 @@ input {
   padding: 8px;
 }
 
+input::placeholder {
+  color: var(--fc-main);
+}
+
 .error {
   color: var(--warning-rose);
   font-size: var(--fs-error);
   font-weight: var(--fw-error);
   line-height: var(--lh-error);
   letter-spacing: var(--ls-error);
-
   position: absolute;
 }
 

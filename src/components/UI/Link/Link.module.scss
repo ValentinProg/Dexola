@@ -1,4 +1,5 @@
 .link {
+  text-transform: uppercase;
   padding: 12px 66px;
   background: var(--bg-link);
   display: flex;
@@ -16,11 +17,12 @@
 
   &:hover {
     background: #272a2ee5;
+    cursor: pointer;
   }
 }
 
-@media (max-width: 992px) {
-  .link {
-    padding: 12px 30px;
-  }
-}
+// @media (max-width: 992px) {
+//   // .link {
+//   //   padding: 12px 30px;
+//   // }
+// }

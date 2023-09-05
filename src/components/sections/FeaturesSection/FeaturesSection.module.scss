@@ -6,13 +6,20 @@
 .featuresInfo {
 display: flex;
 justify-content: center;
-
   margin-bottom: 90px;
 }
 
 .featuresInfoContent {
   // color: red;
 
+}
+
+.heroTextMobile {
+  color: var(--fc-secondary);
+  width: 100%;   // for text 
+  max-width: 640px;// for text
+ display: none;
+  
 }
 
 .featuresInfoContentMobile {
@@ -43,6 +50,12 @@ justify-content: center;
 
 
 @media (max-width: 744px) {
+
+  .heroTextMobile {
+    display: contents;
+  }
+  
+
   .featuresInfo {
     margin-bottom: 40px;
   }
@@ -55,6 +68,11 @@ justify-content: center;
 }
 
 @media(max-width: 680px) {
+
+  .heroTextMobile {
+    max-width: auto;
+  }
+  
 
   .featuresInfo {
     margin-bottom: 24px;

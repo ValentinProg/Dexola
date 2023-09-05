@@ -49,7 +49,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={(e) => { e.preventDefault()}} className={styles.joinUsForm}>
+    <form onSubmit={(e) => {e.preventDefault()}} className={styles.joinUsForm}>
       <div className={styles.formWrapper}>
       <Input
         inputName="email"
@@ -62,7 +62,7 @@ const Form = () => {
         imgSrc={star}
         blurHandlerInput={blurHandler}
         reg={regEmail}
-        placeholderText="Enter Email"
+        placeholderText="Enter email"
         setShown={setPasswordShown}
         confirmValidation={confirmPasswordHandler}
       />
@@ -92,7 +92,7 @@ const Form = () => {
         imgSrc={star}
         blurHandlerInput={blurHandler}
         reg={regPassword}
-        placeholderText="password"
+        placeholderText="Password"
         setShown={setPasswordShown}
         shown={passwordShown}
         confirmValidation={confirmPasswordHandler}

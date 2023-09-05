@@ -9,6 +9,18 @@ import instagram from "../assets/instagram.svg";
 import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
 
+import b1Img1 from "../assets/HeroImgsB1/b1i1.png";
+import b1Img2 from "../assets/HeroImgsB1/b1i2.png";
+import b1Img3 from "../assets/HeroImgsB1/b1i3.png";
+import b1Img4 from "../assets/HeroImgsB1/b1i4.png";
+import b1Img5 from "../assets/HeroImgsB1/b1i5.png";
+
+import b2Img1 from "../assets/HeroImgsB2/b2i1.png";
+import b2Img2 from "../assets/HeroImgsB2/b2i2.png";
+import b2Img3 from "../assets/HeroImgsB2/b2i3.png";
+import b2Img4 from "../assets/HeroImgsB2/b2i4.png";
+import b2Img5 from "../assets/HeroImgsB2/b2i5.png";
+
 interface NFTs {
   id: number;
   avatar: string;
@@ -104,6 +116,25 @@ export const links: links[] = [
     imgPath: telegram,
   },
 ];
+
+
+
+
+export const imgArrayFirsrtBlock: string[] = [
+  b1Img1,
+  b1Img2,
+  b1Img3,
+  b1Img4,
+  b1Img5,
+]; 
+
+export const imgArraySecondBlock: string[] = [
+  b2Img1,
+  b2Img2,
+  b2Img3,
+  b2Img4,
+  b2Img5,
+]; 
 
 
 

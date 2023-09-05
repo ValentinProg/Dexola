@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="appWrapper">
       <Header />
-      {/* <HeroSection /> */}
+      <HeroSection />
       <main className="content">
         <FeauturesSection />
         <TopNFTsSection />
@@ -17,17 +17,6 @@ const App = () => {
       </main>
       <Footer />
     </div>
-
-    // <div className="appWrapper">
-    //   <main className="content">
-    //     <Header />
-    //     <HeroSection />
-    //     <Feautures />
-    //     <TopNFTs />
-    //     <h1>Join US 03</h1>
-    //     <Footer />
-    //   </main>
-    // </div>
   );
 };
 

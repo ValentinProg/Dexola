@@ -8,6 +8,11 @@ import cardImg3 from "../../../assets/cardImg3.png";
 const FeauturesSection = () => {
   return (
     <>
+       <div className={styles.heroTextMobile}>
+        Prepare to be transported beyond the boundaries of traditional gaming
+        with the StarRunner Ecosystem - the beating heart that drives the
+        adrenaline-charged galactic P2E odyssey of 'StarRunner.'
+      </div>
       <SectionTitle sectionTitleNumber={"01"}>Features</SectionTitle>
       <section className={styles.feautures}>
         <div className={styles.featuresInfo}>

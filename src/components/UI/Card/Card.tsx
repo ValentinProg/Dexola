@@ -21,17 +21,6 @@ const Card = ({
         <div className={styles.imgContainer}>
           <img src={cardImgName} className={styles.cardImg} />
         </div>
-        {/* <div className={styles.cardContent}>
-        <h3>
-          <span className={styles.cardTitleNumber}>{cardTitleNumber}</span>
-          <span>{cardTitle}</span>
-        </h3>
-          <p className={styles.cardText}>
-            {children}
-          </p>
-          <Link to="" linkContent="DISCOVER NOW"/>
-        </div> */}
-
         <div className={styles.cardContent}>
           <h3>
             <div className={styles.cardTitleNumber}>{cardTitleNumber}</div>
