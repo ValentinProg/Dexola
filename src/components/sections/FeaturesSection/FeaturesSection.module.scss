@@ -37,13 +37,16 @@
   }
 }
 
-@media (max-width: 992px) {
+// @media (max-width: 992px) {
+//   .heroTextMobile {
+//     display: contents;
+//   }
+// }
+
+@media (max-width: 744px) {
   .heroTextMobile {
     display: contents;
   }
-}
-
-@media (max-width: 744px) {
   .featuresInfo {
     margin-bottom: 40px;
   }
