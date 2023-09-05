@@ -29,8 +29,14 @@ const Input = ({ inputName,value,setValue,dirty,error,setError,errorText,imgSrc,
   return (
     <div className={styles.wrapperInput}>
          <div className={styles.inputBlock} style={{borderBottomColor: borderStyleForError(dirty, error)}}>
-              {inputName === 'phone' ? <img src={imgSrc} className={styles.inputCountry}/> : (error &&  <img src={imgSrc} className={styles.inputStar}/> )}
-              <input onChange={e =>{inputName === 'confirmpassword' ? confirmValidation(e) : validationWithReg(e,reg,setValue,setError,errorText)}} onBlur={() => blurHandlerInput()} value={value} placeholder={placeholderText} name={inputName}  type={shown ? "password" : "text"} />
+              {
+                inputName === 'phone' 
+                  ? <img src={imgSrc} className={styles.inputCountry}/> 
+                  : <img src={imgSrc} className={styles.inputStar}/>
+              }
+
+              <input onChange={e =>{inputName === 'confirmpassword' ? confirmValidation(e) : validationWithReg(e,reg,setValue,setError,errorText)}} onBlur={() => blurHandlerInput()} value={value} placeholder={placeholderText} name={inputName} type={(inputName === 'password' || inputName === 'confirmpassword') ?  (!shown ? "password" : 'text') : "text"}  />
+
               {(inputName === 'password' || inputName === 'confirmpassword') && <button  onClick={ () => setShown(!shown)}><img className={styles.shownPassworEye} src={shown ? openEye : closeEye}/></button>}
         </div>
         {(dirty && error) && <div className={styles.error}>{error}</div>}
@@ -39,3 +45,6 @@ const Input = ({ inputName,value,setValue,dirty,error,setError,errorText,imgSrc,
 };
 
 export default Input;
+
+
+// type={(inputName === 'password' || inputName === 'confirmpassword') ? (!shown && "password") : "text"}

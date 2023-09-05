@@ -47,7 +47,6 @@
 
 @media (max-width: 1440px) {
   :root {
-    // --fs-title: 112px;
     --fs-title: #{getFontClamp(112, 140, 744, 1440)};
     --fs-subtitle: #{getFontClamp(20, 24, 744, 1440)};
     --fs-body: #{getFontClamp(16, 18, 744, 1440)};
@@ -60,9 +59,9 @@
   :root {
     // --fs-title: 112px;
     --fs-title: #{getFontClamp(48, 112, 375, 744)};
-    --fs-subtitle: #{getFontClamp(16, 20, 744, 1440)};
-    --fs-body: #{getFontClamp(14, 16, 744, 1440)};
-    --fs-link: #{getFontClamp(14, 16, 744, 1440)};
+    --fs-subtitle: #{getFontClamp(16, 20, 375, 744)};
+    --fs-body: #{getFontClamp(14, 16, 375, 744)};
+    --fs-link: #{getFontClamp(14, 16, 375, 744)};
   }  
 }
 

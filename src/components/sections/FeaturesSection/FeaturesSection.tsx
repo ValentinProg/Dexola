@@ -12,12 +12,16 @@ const FeauturesSection = () => {
       <section className={styles.feautures}>
         <div className={styles.featuresInfo}>
           <h3 className={styles.featuresInfoTitle}>About StarRunner</h3>
-          <div className={styles.featuresInfoContent}>
-            The StarRunner Blockchain Ecosystem isn't
-            <br />a mere playground; it's a living, evolving entity
-            <br />
+          <p className={styles.featuresInfoContent}>
+            The StarRunner Blockchain Ecosystem isn't<br/>
+            a mere playground; it's a living, evolving entity <br/>
             that adapts to the desires and creativity of its players.
-          </div>
+          </p>
+          <p className={`${styles.featuresInfoContent} ${styles.featuresInfoContentMobile}`}>
+            The StarRunner Blockchain Ecosystem isn't
+            a mere playground; it's a living, evolving entity
+            that adapts to the desires and creativity of its players.
+          </p>
         </div>
         <div className={styles.feautureCards}>
           <Card
@@ -33,7 +37,7 @@ const FeauturesSection = () => {
             cardTitleNumber="02" 
             cardTitle="Staking"
           >
-            Join a thriving community <br /> of stakers, united by their passion
+            Join a thriving community of stakers, united by their passion
             for exploration, strategy, and gaming.
           </Card>
           <Card
@@ -41,7 +45,7 @@ const FeauturesSection = () => {
             cardTitleNumber="03"
             cardTitle="NFT minting"
           >
-            Every StarRunner NFT tells <br />a story - YOUR story. This NFT
+            Every StarRunner NFT tells a story - YOUR story. This NFT
             encapsulates the essence of your journey like never before.
           </Card>
         </div>

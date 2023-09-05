@@ -2,30 +2,100 @@
   // padding: 0px 120px;
   background-color: var(--bg);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--border-blue);
   border-bottom: 1px solid var(--border-blue);
   color: var(--fc-secondary);
+  padding: 0px 120px;
 
-
-  span {
-    font-size: var(--fs-body);
-    letter-spacing: -0.36px;
-    padding: 20px 0px;
-  }
+  // div {
+  //   font-size: var(--fs-body);
+  //   letter-spacing: -0.36px;
+  //   padding: 20px 0px;
+  // }
 }
 
 .dexolaContacts {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 35px 116px;
   gap: 40px;
   border-left: 1px solid var(--border-blue);
   border-right: 1px solid var(--border-blue);
+}
 
+.footerFirstblockInfo {
+  display: block;
+  div:nth-child(2) {
+    display: none;
+  }
 }
 
 
+@media (max-width: 1268px) {
+  .footer {
+    padding: 0 24px;
+  }
 
+  .dexolaContacts {
+    padding: 35px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dexolaContacts {
+    padding: 35px 30px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 744px) {
+  .footer {
+    color: var(--fc-main);
+  }
+
+  .footerSecondblockInfo {
+    display: none;
+  }
+  .dexolaContacts {
+    border: none;
+    margin-right: 32px;
+  }
+
+  .footerFirstblockInfo {
+    div:nth-child(2) {
+      display: flex;
+    }
+  }
+}
+
+@media(max-width: 680px) {
+  .dexolaContacts {
+    padding: 35px 10px;
+    margin-right: 0px;
+  }
+
+    
+    }
+
+
+@media (max-width: 470px) {
+  .footer {
+    flex-direction: column-reverse;
+    margin-bottom: 34px;
+    border-bottom: none;
+  }
+  .dexolaContacts {
+    border: none;
+    margin-right: 0px;
+    gap: 32px;
+    padding: 10px 30px;
+  }
+
+  .footerFirstblockInfo {
+    div:nth-child(2) {
+      justify-content: center;
+    }
+  }
+}

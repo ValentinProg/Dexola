@@ -2,20 +2,20 @@ import styles from "./Link.module.scss";
 import arrowImg from '../../../assets/arrow.svg'
 
 interface LinkProps {
-  children: React.ReactNode;
   imgName?: string;
   to?: string;
+  linkContent: string;
 }
 
 
-const Link = ({ children, imgName, to }: LinkProps) => {
+const Link = ({  imgName, to, linkContent}: LinkProps) => {
 const linkImg = imgName === undefined ? arrowImg : imgName
 // const linkImg = imgName ?? arrowImg
 
   return (
     <a href={to} className={styles.link}>
       <img src={linkImg} />
-      {children}
+      {linkContent}
     </a>
   );
 };

@@ -9,6 +9,7 @@ interface CardProps {
 }
 
 const Card = ({
+  // remove children change to text
   children,
   cardImgName,
   cardTitle,
@@ -16,20 +17,31 @@ const Card = ({
 }: CardProps) => {
   return (
     <div className={styles.cardWrapper}>
-      
-      <div className={styles.imgContainer}>
-        <img src={cardImgName} className={styles.cardImg} />
-      </div>
-      <div className={styles.cardContent}>
+      <div className={styles.cardContentWrapper}>
+        <div className={styles.imgContainer}>
+          <img src={cardImgName} className={styles.cardImg} />
+        </div>
+        {/* <div className={styles.cardContent}>
         <h3>
           <span className={styles.cardTitleNumber}>{cardTitleNumber}</span>
           <span>{cardTitle}</span>
         </h3>
-        <div className={styles.cardText}>{children}</div>
-       
+          <p className={styles.cardText}>
+            {children}
+          </p>
+          <Link to="" linkContent="DISCOVER NOW"/>
+        </div> */}
+
+        <div className={styles.cardContent}>
+          <h3>
+            <div className={styles.cardTitleNumber}>{cardTitleNumber}</div>
+            <div>{cardTitle}</div>
+          </h3>
+          <p className={styles.cardText}>{children}</p>
+        </div>
       </div>
-      <div className={styles.cardTextLink}>
-      <Link to="">DISCOVER NOW</Link>
+      <div className={styles.cardLink}>
+        <Link to="" linkContent="DISCOVER NOW" />
       </div>
     </div>
   );

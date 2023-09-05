@@ -1,6 +1,6 @@
 .tableWrapper {
-    max-width: 100%;
-    margin-bottom: 65px;
+  max-width: 100%;
+  margin-bottom: 65px;
 }
 
 table {
@@ -26,14 +26,12 @@ th {
 td:first-child,
 th:first-child {
   padding: 8px 0px;
- 
-// text-align: left ;
+
+  // text-align: left ;
 }
 
-td:first-child
- {
+td:first-child {
   min-width: 64px;
-
 }
 
 td:nth-child(2),
@@ -41,14 +39,21 @@ th:nth-child(2) {
   width: 38%;
 }
 
- tbody tr:nth-of-type(odd) {
+tbody tr:nth-of-type(odd) {
   background-color: var(--bg-table);
   border-top: 1px solid var(--border-blue);
   border-bottom: 1px solid var(--border-blue);
 }
 
+@media (max-width: 680px) {
+  th,
+  td {
+    padding: 3px 6px;
+  }
 
-@media(max-width: 650px) {
+}
+
+@media (max-width: 470px) {
   table {
     color: var(--fc-main);
   }
@@ -65,43 +70,51 @@ th:nth-child(2) {
   tbody tr:nth-of-type(5) {
     border-bottom: 1px solid var(--border-blue);
   }
-   
-  tr { 
+
+  tr {
     position: relative;
   }
 
   th {
     display: none;
-  }  
-  
+  }
+
   td {
     display: flex;
     justify-content: space-between;
     padding: 4px;
+
+   
   }
 
   td:nth-of-type(1) {
- padding: 0px;
+    padding: 0px;
+    
+    
   }
-  
 
   td:nth-of-type(2) {
     color: var(--fc-secondary);
+    font-family: var(--ff-secondary);
     font-weight: var(--fw-subtitle);
-    width: auto;
+    // width: auto;
   }
 
-
-  
   // td:nth-of-type(2)::after  {
   //  content: 'ada';
   // }
 
+  
 
+  td:nth-of-type(5) {
+margin-bottom: 16px;
+
+  }
 
   // hide
   td:nth-of-type(6) {
     color: var(--fc-secondary);
+    font-family: var(--ff-secondary);
     font-weight: var(--fw-subtitle);
     // display: none;
     // justify-content: left;
@@ -109,28 +122,28 @@ th:nth-child(2) {
     position: absolute;
     top: 0px;
     right: 0px;
- 
+   
   }
 
   .avatar {
     position: absolute;
     left: 24px;
-    top: 45px;
+    top: 40px;
   }
 
   td:nth-of-type(3)::before {
-    content: 'Rarity: ';
+    content: "Rarity: ";
     margin-left: 120px;
   }
   td:nth-of-type(4)::before {
-    content: 'Total games: ';
+    content: "Total games: ";
     margin-left: 120px;
   }
   td:nth-of-type(5)::before {
-    content: 'Games won: ';
+    content: "Games won: ";
     margin-left: 120px;
   }
   td:nth-of-type(6)::after {
-    content: ' ETH';
+    content: " ETH";
   }
 }

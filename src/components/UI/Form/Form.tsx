@@ -50,7 +50,7 @@ const Form = () => {
 
   return (
     <form onSubmit={(e) => { e.preventDefault()}} className={styles.joinUsForm}>
-      
+      <div className={styles.formWrapper}>
       <Input
         inputName="email"
         value={email}
@@ -161,7 +161,8 @@ const Form = () => {
        </div> */}
 
       <div className={styles.linkContainer}>
-        <Link imgName={line}>Send it</Link>
+        <Link imgName={line} linkContent="Send it"/>
+      </div>
       </div>
     </form>
   );

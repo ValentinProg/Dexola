@@ -4,19 +4,22 @@ import { links } from "../../constants/constants";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <span>Designed by Dexola - 2023</span>
+      <div className={styles.footerFirstblockInfo}>
+        <div>Designed by Dexola - 2023</div>
+        <div>© All rights reserved</div>
+      </div>
       <nav className={styles.dexolaContacts}>
         {links.map((item) => {
           const { to, imgPath, id, name } = item;
 
           return (
-            <a href={to} key={id} >
-              <img src={imgPath} alt={name} className={styles.contactsImg}/>
+            <a href={to} key={id}>
+              <img src={imgPath} alt={name} className={styles.contactsImg} />
             </a>
           );
         })}
       </nav>
-      <span>© All rights reserved</span>
+      <div className={styles.footerSecondblockInfo}>© All rights reserved</div>
     </footer>
   );
 };

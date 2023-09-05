@@ -17,21 +17,12 @@ const HeroSection = () => {
         </div>
         <div className={styles.heroImages}>
           <div className={styles.firstBlockImg}>
-               {/* <div className={styles.image}>
-                 <img src={b1Img1} />
-            </div>
-                <div className={styles.image}>
-                 <img src={b1Img2} />
-            </div>
-            <div className={styles.image}>
-            <img src={b1Img3} />
-            </div>
-            <div className={styles.image}>
-            <img src={b1Img4} />
-            </div>
-            <div className={styles.image}>
-            <img src={b1Img5} />
-            </div> */}
+            {/*             
+              <img src={b1Img1} />
+              <img src={b1Img2} /
+              <img src={b1Img3} />
+              <img src={b1Img4} />
+              <img src={b1Img5} /> */}
           </div>
           <div className={styles.secondBlockImg}></div>
         </div>
@@ -40,6 +31,11 @@ const HeroSection = () => {
         <div>
           <h1 className={styles.runningLine}>dexola camp</h1>
         </div>
+      </div>
+      <div className={`${styles.heroText} ${styles.heroTextMobile} `}>
+        Prepare to be transported beyond the boundaries of traditional gaming
+        with the StarRunner Ecosystem - the beating heart that drives the
+        adrenaline-charged galactic P2E odyssey of 'StarRunner.'
       </div>
     </section>
   );

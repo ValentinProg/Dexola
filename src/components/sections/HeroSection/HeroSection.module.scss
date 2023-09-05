@@ -1,5 +1,9 @@
 .heroSection {
   // height: 732px; // padding
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 .heroSectionContent {
@@ -17,63 +21,125 @@
   width: 100%;   // for text 
   max-width: 640px;// for text
   padding: 0px 70px 56px 24px;
- 
-  // padding: 0px 70px 56px 24px;
-  // margin-bottom: 56px;
+}
+
+.heroTextMobile {
+  display: none;
 }
 
 .heroImages {
   border: 1px solid var(--border-blue);
   display: flex;
- 
+
   justify-content: center;
   align-items: center;
- 
+  
 }
 
 
-
-// .firstBlockImg {
-//   padding: 155px 116px;
-//   background: url(/src/assets/b1i1.png);
-//   border-right:  1px solid var(--border-blue);
-
-//   // -webkit-animation-name: firstBlockImg;
-//   // -webkit-animation-duration: 10s;
-//   // -webkit-animation-timing-function: infinite;
-  
-//   // -moz-animation-name: firstBlockImg;
-//   // -moz-animation-duration: 10s;
-//   // -moz-animation-timing-function: infinite;
-
-//   animation: firstBlockImg 10s infinite;
-// }
-
-
 .firstBlockImg {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 155px 116px;
   background: url("/src/assets/b1i1.png");
-
-  -moz-animation: firstBlockImg 10s infinite alternate;
-  -ms-animation: firstBlockImg 10s infinite alternate;
-  -webkit-animation: firstBlockImg 10s infinite alternate;
+  animation: firstBlockImg 10s infinite;
+  // -moz-animation: firstBlockImg 10s infinite;
+  // -ms-animation: firstBlockImg 10s infinite alternate;
+  // -webkit-animation: firstBlockImg 10s infinite alternate;
   //  animation: firstBlockImg 2s infinite alternate, helloWorld 2s infinite alternate;
   //  -moz-animation: firstBlockImg 2s infinite alternate, helloWorld 2s infinite alternate;
-  //  -webkit-animation: firstBlockImg 2s infinite alternate, helloWorld 2s infinite alternate;
-
+  //  -webkit-animation: firstBlockImg 2s infinite alternate, helloWorld 2s infinite alternate; 
 }
 
 @keyframes firstBlockImg {
   0% {
-    -webkit-background: url(/src/assets/b1i1.png);
     background: url(/src/assets/b1i1.png);
-    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  20% {
+    background: url(/src/assets/b1i2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  40% {
+    background: url(/src/assets/b1i3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  60% {
+    background: url(/src/assets/b1i4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+  }
+  80% {
+    background: url(/src/assets/b1i5.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   100% {
-    -webkit-background: url(/src/assets/b1i1.png);
-    background: url(/src/assets/b1i1.png);
-    opacity: 0;
+    background: url(/src/assets/b1i1.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
   }
+}
+
+// @-moz-keyframes firstBlockImg {
+//   0% {
+//     background: url(/src/assets/b1i1.png);
+ 
+//   }
+//   20% {
+//     background: url(/src/assets/b1i2.png);
+    
+//   }
+//   40% {
+//     background: url(/src/assets/b1i3.png);
+//   }
+  
+//   60% {
+//     background: url(/src/assets/b1i4.png);
+ 
+//   }
+//   80% {
+//    background: url(/src/assets/b1i5.png);
+//   }
+//   100% {
+//     background: url(/src/assets/b1i1.png);
+   
+//   }
+// }
+
+
+
+
+// @keyframes firstBlockImg {
+//   0% {
+//     -webkit-background: url(/src/assets/b1i1.png);
+//     background: url(/src/assets/b1i1.png);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-background: url(/src/assets/b1i1.png);
+//     background: url(/src/assets/b1i1.png);
+//     opacity: 0;
+//   }
+
+ 
+
   
   // 20% {
   //   -webkit-background: url(/src/assets/b1i2.png);
@@ -92,30 +158,30 @@
   //   opacity: 1;
   // }
 
-  // 0%,100% {
-  //   -webkit-background-image: url(/src/assets/b1i1.png);
-  //   background-image: url(/src/assets/b1i1.png);
-  //   opacity: 0;
-  // }
-  // 20% {
-  //   -webkit-background-image: url(/src/assets/b1i2.png);
-  //   background-image: url(/src/assets/b1i2.png);
-  //   opacity: 1;
-  // }
-  // 40% {
-  //   -webkit-background-image: url(/src/assets/b1i3.png);
-  //   background-image: url(/src/assets/b1i3.png);
-  // }
-  // 60% {
-  //   -webkit-background-image: url(/src/assets/b1i4.png);
-  //   background: url(/src/assets/b1i4.png);
-  // }
-  // 80% {
-  //   -webkit-background-image: url(/src/assets/b1i5.png);
-  //   background: url(/src/assets/b1i5.png);
-  // }
+//   0%,100% {
+//     -webkit-background-image: url(/src/assets/b1i1.png);
+//     background-image: url(/src/assets/b1i1.png);
+//     opacity: 0;
+//   }
+//   20% {
+//     -webkit-background-image: url(/src/assets/b1i2.png);
+//     background-image: url(/src/assets/b1i2.png);
+//     opacity: 1;
+//   }
+//   40% {
+//     -webkit-background-image: url(/src/assets/b1i3.png);
+//     background-image: url(/src/assets/b1i3.png);
+//   }
+//   60% {
+//     -webkit-background-image: url(/src/assets/b1i4.png);
+//     background: url(/src/assets/b1i4.png);
+//   }
+//   80% {
+//     -webkit-background-image: url(/src/assets/b1i5.png);
+//     background: url(/src/assets/b1i5.png);
+//   }
 
-}
+// }
 
 // @-moz-keyframes firstBlockImg {
 //   0% {
@@ -171,7 +237,7 @@
   padding: 155px 116px;
   background: url(/src/assets/b2i1.png);
   animation: secondBlockImg 12s infinite;
- 
+
 }
 
 @keyframes secondBlockImg {
@@ -244,7 +310,40 @@
 
 @media (max-width:992px) {
   .heroSectionContent {
- display: block;
+// flex-direction: column-reverse;
+// align-items: center;
+// justify-content: center;
+ justify-content: center;
+ 
+ padding: 0px 24px;
   }
+  .heroImages {
+    width: 100%;
+  }
+
+  .firstBlockImg {
+    width: 100%;
+ 
+  
+  }
+
+  .secondBlockImg{
+    width: 100%;
+  
+  }
+
+  .heroText {
+    
+    display: none;
+  }
+
+  .heroTextMobile {
+    display: flex;
+    // justify-content: center;
+    // align-self: center;
+  padding: 0px;
+padding: 0px 24px;
+  }
+
 
 }

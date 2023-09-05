@@ -1,11 +1,14 @@
 .joinUsForm {
   border: 1px solid var(--border-blue);
-  padding: 55px 40px;
-  
-max-width: 600px;
+  // padding: 55px 40px;
+
 width: 100%;
+
 }
 
+.formWrapper {
+  padding: 55px 40px;
+}
 
 
 // .email,
@@ -84,13 +87,35 @@ width: 100%;
   
 }
 
+// @media (max-width:992px) {
+//   .joinUsForm {
+ 
 
-@media(max-width: 380px) {
+
+//   }
+//    }
 
 
+@media (max-width: 1268px) {
+
+}
+
+@media (max-width: 992px) {
   .joinUsForm {
-  max-width: 326px;
-  
+   
+
+ 
   }
-  
+}
+
+@media (max-width: 744px) {
+  .joinUsForm {
+   
+
+ 
+  }
+}
+
+@media (max-width: 650px) {
+
 }

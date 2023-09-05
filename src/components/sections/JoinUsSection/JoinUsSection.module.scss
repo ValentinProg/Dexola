@@ -1,7 +1,9 @@
 .joinUs {
   display: flex;
   margin-bottom: 125px;
- 
+  justify-content: center;
+
+
 }
 
 .joinUsInfo {
@@ -18,9 +20,34 @@
 
 
 @media (max-width:992px) {
-  .joinUs {
-    display: block;
+  // .joinUs {
+  //   flex-direction: column;
 
+  //  }
+
+  //  .arrowLine {
+  //   display: none;
+  //  }
+
+  //  .joinUsInfo {
+  
+  //   margin:0px;
+  //   margin-bottom: 56px;
+  //   align-self: start;
+    
+  //  }
+
+
+}
+
+@media (max-width:744px) {
+
+
+
+    .joinUs {
+    flex-direction: column;
+
+// padding: 0px 40px;
    }
 
    .arrowLine {
@@ -28,18 +55,24 @@
    }
 
    .joinUsInfo {
-    margin-bottom: 56px;
+  
+
+    margin-bottom: 40px;
+    align-self: start;
+    padding: 0px;
    }
 
-   .joinUsInfoContent {
-    max-width: 630px;
+
+
    }
-}
-
-@media(max-width: 650px) {
 
 
-  .joinUsInfoContent {
-    max-width: 327px;
-   }
-}
+   @media (max-width:470px) {
+    .joinUsInfo {
+  
+
+      margin-bottom: 32px;
+    
+     }
+  }
+   

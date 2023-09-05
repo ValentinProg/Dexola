@@ -1,21 +1,30 @@
 .feautures {
     margin-bottom: 65px;
-    display: block;
+    // display: block;
 }
 
 .featuresInfo {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
+
   margin-bottom: 90px;
 }
 
+.featuresInfoContent {
+  // color: red;
+
+}
+
+.featuresInfoContentMobile {
+  display: none;
+
+}
+
 .featuresInfoTitle {
+  width: 190px;
   margin-right: 24px;
 }
 
-.featuresInfoContent {
-  margin-top: 6px;
-}
 
 .feautureCards {
 display: grid;
@@ -24,11 +33,54 @@ column-gap: 40px;
 justify-content: center;
 }
 
+
+
 @media (max-width: 1268px) {
   .feautureCards {
-   
     column-gap: 16px;
-   
     }
+}
+
+
+@media (max-width: 744px) {
+  .featuresInfo {
+    margin-bottom: 40px;
+  }
+  .featuresInfoTitle {
+    margin-right: 70px;
+  }
+
+
   
+}
+
+@media(max-width: 680px) {
+
+  .featuresInfo {
+    margin-bottom: 24px;
+   display: block;
+  }
+
+  .feautureCards {
+ 
+  grid: none;
+   gap: 16px;
+    
+    }
+
+}
+
+@media (max-width:470px) {
+  .featuresInfoContent {
+    display: none;
+  }
+
+  .featuresInfoTitle {
+    margin-bottom: 12px;
+  }
+  .featuresInfoContentMobile{
+display: contents;
+
+  }
+
 }

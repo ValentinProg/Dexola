@@ -21,7 +21,7 @@ const TopNFTsSection = () => {
               <th><h3>Rarity Level</h3></th>
               <th><h3>Total games</h3></th>
               <th><h3>Games Won</h3></th>
-              <th><h3>Price(ETH)</h3></th>
+              <th><h3>Price (ETH)</h3></th>
             </tr>
           </thead>
           <tbody>
@@ -30,7 +30,7 @@ const TopNFTsSection = () => {
                 <td>
                   <img src={NFT.avatar} className={styles.avatar} />
                 </td>
-                <td data-cell="name" id="idPrice">{NFT.name}</td>
+                <td data-cell="name">{NFT.name}</td>
                 <td data-cell="rarity">{NFT.level}</td>
                 <td data-cell="total games">{NFT.games}</td>
                 <td data-cell="games won">{NFT.wins}</td>
