@@ -124,7 +124,6 @@ const Form = () => {
         setShown={setConfirmPasswordShown}
         shown={confirmPasswordShown}
       />
-
       {/* <div className={styles.email}>
            <div className={styles.emailInput} style={{borderBottomColor: borderStyleForError(emailDirty, emailError)}}>
 
@@ -170,7 +169,6 @@ const Form = () => {
 
            {(confirmPasswordDirty && confirmPasswordError) && <div className={styles.error}>{confirmPasswordError}</div>}
        </div> */}
-
       <div className={styles.linkContainer}>
         <Link imgName={line} linkContent="Send it"/>
       </div>
