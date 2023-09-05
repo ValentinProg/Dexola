@@ -1,19 +1,16 @@
 .header {
-display: flex;
-justify-content: space-between;
-padding: 15px 120px;
-z-index: 1;
-  
-
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 120px;
+  z-index: 1;
 
   background-color: var(--bg-main);
   position: sticky;
   top: 0;
 }
 
-@media (max-width:1268px) {
+@media (max-width: 1268px) {
   .header {
     padding: 15px 24px;
-    
   }
 }

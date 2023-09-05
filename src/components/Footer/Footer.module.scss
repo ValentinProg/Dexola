@@ -1,5 +1,4 @@
 .footer {
-  // padding: 0px 120px;
   background-color: var(--bg);
   display: flex;
   justify-content: space-between;
@@ -8,12 +7,6 @@
   border-bottom: 1px solid var(--border-blue);
   color: var(--fc-secondary);
   padding: 0px 120px;
-
-  // div {
-  //   font-size: var(--fs-body);
-  //   letter-spacing: -0.36px;
-  //   padding: 20px 0px;
-  // }
 }
 
 .dexolaContacts {
@@ -31,7 +24,6 @@
     display: none;
   }
 }
-
 
 @media (max-width: 1268px) {
   .footer {
@@ -70,15 +62,12 @@
   }
 }
 
-@media(max-width: 680px) {
+@media (max-width: 680px) {
   .dexolaContacts {
     padding: 35px 10px;
     margin-right: 0px;
   }
-
-    
-    }
-
+}
 
 @media (max-width: 470px) {
   .footer {

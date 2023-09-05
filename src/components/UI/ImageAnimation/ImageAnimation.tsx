@@ -23,7 +23,7 @@ const ImageAnimation = ({ imgArray, animationInterval }: ImageAnimation) => {
   return (
     <div className={styles.imageContainer}>
       {imgArray.map((src, index) => (
-        <motion.img 
+        <motion.img
           key={`image-${index}`}
           style={{
             opacity: currentImageIndex === index ? 1 : 0,

@@ -26,8 +26,6 @@ th {
 td:first-child,
 th:first-child {
   padding: 8px 0px;
-
-  // text-align: left ;
 }
 
 td:first-child {
@@ -50,7 +48,6 @@ tbody tr:nth-of-type(odd) {
   td {
     padding: 3px 6px;
   }
-
 }
 
 @media (max-width: 470px) {
@@ -83,46 +80,30 @@ tbody tr:nth-of-type(odd) {
     display: flex;
     justify-content: space-between;
     padding: 4px;
-
-   
   }
 
   td:nth-of-type(1) {
     padding: 0px;
-    
-    
   }
 
   td:nth-of-type(2) {
     color: var(--fc-secondary);
     font-family: var(--ff-secondary);
     font-weight: var(--fw-subtitle);
-    // width: auto;
   }
-
-  // td:nth-of-type(2)::after  {
-  //  content: 'ada';
-  // }
-
-  
 
   td:nth-of-type(5) {
-margin-bottom: 16px;
-
+    margin-bottom: 16px;
   }
 
-  // hide
   td:nth-of-type(6) {
     color: var(--fc-secondary);
     font-family: var(--ff-secondary);
     font-weight: var(--fw-subtitle);
-    // display: none;
-    // justify-content: left;
     gap: 5px;
     position: absolute;
     top: 0px;
     right: 0px;
-   
   }
 
   .avatar {

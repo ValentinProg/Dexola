@@ -10,6 +10,17 @@ import { regPassword } from "../../../constants/constants";
 import Input from "../Input/Input";
 
 const Form = () => {
+  // const [inputs, setInputs] = useState({
+  //   email: '',
+  //   phone: '',
+  //   password: '',
+  //   retryPassword: '',
+  // }) 
+
+  // const inputHandler = (event:React.ChangeEvent<HTMLInputElement>) => {
+  //   setInputs({...inputs, [event.target.name]: event.target.value})
+  // };
+
   const [email, setEmail] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
   const [emailError, setEmailError] = useState("Is not valid email");

@@ -42,13 +42,8 @@ input::placeholder {
   margin-right: 20px;
 }
 
-
-
-@media(max-width: 744px) {
-
+@media (max-width: 744px) {
   input {
-
-    padding:  8px 8px 11px 8px;
+    padding: 8px 8px 11px 8px;
   }
- 
 }

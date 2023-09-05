@@ -16,7 +16,6 @@ const TopNFTsSection = () => {
           <thead>
             <tr>
               <th></th>
-              {/* <th className="textSubtitle">NFT Name</th> */}
               <th><h3>NFT Name</h3></th>
               <th><h3>Rarity Level</h3></th>
               <th><h3>Total games</h3></th>

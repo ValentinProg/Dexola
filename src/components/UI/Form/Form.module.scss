@@ -1,121 +1,13 @@
 .joinUsForm {
   border: 1px solid var(--border-blue);
-  // padding: 55px 40px;
-
-width: 100%;
-
+  width: 100%;
 }
 
 .formWrapper {
   padding: 55px 40px;
 }
 
-
-// .email,
-// .phone,
-// .password,
-// .confirmPassword {
-//   // padding-bottom: 22px;
-  
-//   padding-bottom: 21px;
-//   margin-bottom: 16px;
-// }
-
-// .shownPassworEye {
-//   width: 24px;
-//   height: 24px;
-// }
-
-// .emailInput,
-// .phoneInput,
-// .passwordInput,
-// .confirmPasswordInput {
-//   display: flex;
-//   align-items: center;
-//   border-bottom: 1px solid white;
-
-
-//   button {
-//     border: none;
-//     background-color: transparent;
-//   }
-// }
-
-// .passwordInput,
-// .confirmPasswordInput {
-//   justify-content: space-between;
-// }
-
-// .passwordInputContent,
-// .confirmPasswordInputContent {
-//   display: flex;
-// }
-
-// input {
-//   color: var(--fc-secondary);
-//   background-color: transparent;
-//   width: 100%;
-//   border: none;
-//   // margin-bottom: 10px;
-//   outline: none;
-
-//    padding: 14px 210px 8px 0px;
-// }
-
-
-
-// .error {
-//   color: var(--warning-rose);
-//   font-size: var(--fs-error);
-//   font-weight: var(--fw-error);
-//   line-height: var(--lh-error);
-//   letter-spacing: var(--ls-error);
-// }
-
-// .inputStar {
-//   margin-right: 20px;
-// }
-// .inputCountry {
-//   margin-right: 10px;
-// }
-
-
 .linkContainer {
-
   display: flex;
   align-items: flex-start;
-  
-}
-
-// @media (max-width:992px) {
-//   .joinUsForm {
- 
-
-
-//   }
-//    }
-
-
-@media (max-width: 1268px) {
-
-}
-
-@media (max-width: 992px) {
-  .joinUsForm {
-   
-
- 
-  }
-}
-
-@media (max-width: 744px) {
-  .joinUsForm {
-   
-
- 
-  }
-}
-
-@media (max-width: 650px) {
-
 }

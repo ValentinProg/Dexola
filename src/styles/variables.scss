@@ -57,7 +57,6 @@
 
 @media (max-width: 744px) {
   :root {
-    // --fs-title: 112px;
     --fs-title: #{getFontClamp(48, 112, 375, 744)};
     --fs-subtitle: #{getFontClamp(16, 20, 375, 744)};
     --fs-body: #{getFontClamp(14, 16, 375, 744)};
@@ -67,19 +66,4 @@
 
 
 
-// @media (max-width: 375px) {
-//   :root {
-//     --fs-title: 48px;
-//   }  
-// }
 
-
-// --white: #FFF;
-    // --black: #000;
-    // --accentBlue: #204FFE;
-    // --darkGrey: #2F2F2F;
-    // --lightGrey: #B3B3B3;
-    // --bg: #060412;
-    // --bgLink: #272A2E;
-    // --bgTable: #080B27;
-    // --warningRose: #EB3795;

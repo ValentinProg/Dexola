@@ -1,5 +1,5 @@
 import styles from "./Link.module.scss";
-import arrowImg from '../../../assets/arrow.svg'
+import arrowImg from "../../../assets/arrow.svg";
 
 interface LinkProps {
   imgName?: string;
@@ -7,10 +7,8 @@ interface LinkProps {
   linkContent: string;
 }
 
-
-const Link = ({  imgName, to, linkContent}: LinkProps) => {
-const linkImg = imgName === undefined ? arrowImg : imgName
-// const linkImg = imgName ?? arrowImg
+const Link = ({ imgName, to, linkContent }: LinkProps) => {
+  const linkImg = imgName === undefined ? arrowImg : imgName;
 
   return (
     <a href={to} className={styles.link}>

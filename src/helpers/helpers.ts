@@ -21,19 +21,5 @@ export const borderStyleForError = (stateDirty: boolean, stateError: string) => 
  }
 
 
- 
-//  export const functionTablePrice = (contents: string) => {
-//   // find 
-//   // if (window.innerWidth <= 640) {
-//   //   return null
-
-  
-//   // }
-
-//   const tableCell = document.getElementById('idPrice');
-//   console.log( tableCell.style.content);
-//   // tableCell.style.color = 'red';
-//   tableCell.style.textContent = contents;
-//  }
 
 

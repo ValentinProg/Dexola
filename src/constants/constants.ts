@@ -1,8 +1,8 @@
-import LegendaryArtifact from "../assets/LegendaryArtifact.png";
-import EpicWarrior from '../assets/EpicWarrior.png'
-import MysticSpellbook from '../assets/MysticSpellbook.png'
-import CommonPotion from '../assets/CommonPotion.png'
-import HeroicBlade from '../assets/HeroicBlade.png'
+import LegendaryArtifact from "../assets/TableAvatars/LegendaryArtifact.png";
+import EpicWarrior from "../assets/TableAvatars/EpicWarrior.png";
+import MysticSpellbook from "../assets/TableAvatars/MysticSpellbook.png";
+import CommonPotion from "../assets/TableAvatars/CommonPotion.png";
+import HeroicBlade from "../assets/TableAvatars/HeroicBlade.png";
 
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
@@ -79,15 +79,11 @@ export const NFTs: NFTs[] = [
   },
 ];
 
-
-
-
- interface links {
+interface links {
   id: number;
   name: string;
   to: string;
   imgPath: string;
- 
 }
 
 export const links: links[] = [
@@ -117,16 +113,13 @@ export const links: links[] = [
   },
 ];
 
-
-
-
 export const imgArrayFirsrtBlock: string[] = [
   b1Img1,
   b1Img2,
   b1Img3,
   b1Img4,
   b1Img5,
-]; 
+];
 
 export const imgArraySecondBlock: string[] = [
   b2Img1,
@@ -134,11 +127,10 @@ export const imgArraySecondBlock: string[] = [
   b2Img3,
   b2Img4,
   b2Img5,
-]; 
+];
 
-
-
-
-export const regEmail = (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-export const regPhone = (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
-export const regPassword = (/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)
+export const regEmail =
+  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+export const regPhone =
+  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+export const regPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
