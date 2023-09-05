@@ -126,23 +126,25 @@ const Form = () => {
       />
       {/* <div className={styles.email}>
            <div className={styles.emailInput} style={{borderBottomColor: borderStyleForError(emailDirty, emailError)}}>
-
             {emailError &&  <img src={star} className={styles.inputStar}/>}
                <input onChange={e => validationWithReg(e,regEmail,setEmail,setEmailError,'Is not valid email')} onBlur={() => blurHandler()} value={email} placeholder="Enter email" name='email' type="text" />           
           </div>
 
+          
         {(emailDirty && emailError) && <div className={styles.error}>{emailError}</div>}
        </div>
 
+
+
        <div className={styles.phone} >
             <div className={styles.phoneInput} style={{borderBottomColor: borderStyleForError(phoneDirty, phoneError)}}>
-
                 <img src={country} className={styles.inputCountry} /> 
                 <input onChange={e =>validationWithReg(e,regPhone,setPhone,setPhoneError,'wrong phone')} onBlur={() => blurHandler()} value={phone}  placeholder='+38(0__) ___ __ __' name='phone' type="phone" />
       </div>
 
         {(phoneDirty && phoneError) && <div className={styles.error}>{phoneError}</div>}
-       </div>
+       </div>  
+
 
        <div className={styles.password}>
             <div className={styles.passwordInput} style={{borderBottomColor: borderStyleForError(passwordDirty, passwordError)}}>
