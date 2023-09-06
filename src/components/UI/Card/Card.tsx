@@ -2,15 +2,14 @@ import styles from "./Card.module.scss";
 import Link from "../Link/Link";
 
 interface CardProps {
-  children: React.ReactNode;
+  cardText: string,
   cardImgName: string;
   cardTitle: string;
   cardTitleNumber: string;
 }
 
 const Card = ({
-  // remove children change to text
-  children,
+  cardText,
   cardImgName,
   cardTitle,
   cardTitleNumber,
@@ -26,11 +25,11 @@ const Card = ({
             <div className={styles.cardTitleNumber}>{cardTitleNumber}</div>
             <div>{cardTitle}</div>
           </h3>
-          <p className={styles.cardText}>{children}</p>
+          <p className={styles.cardText}>{cardText}</p>
         </div>
       </div>
       <div className={styles.cardLink}>
-        <Link to="" linkContent="DISCOVER NOW" />
+        <Link to="" linkContent="DISCOVER NOW"/>
       </div>
     </div>
   );

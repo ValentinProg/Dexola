@@ -2,10 +2,6 @@ import SectionTitle from "../../UI/SectionTitle/SectionTitle";
 import styles from "./TopNFTsSection.module.scss";
 import { NFTs } from "../../../constants/constants";
 
-
-
-
-
 const TopNFTsSection = () => {
   return (
     <>

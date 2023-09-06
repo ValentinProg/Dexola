@@ -1,4 +1,4 @@
-import ImageAnimation from "../../UI/ImageAnimation/ImageAnimation";
+import HeroImage from "../../UI/HeroImage/HeroImage";
 import styles from "./HeroSection.module.scss";
 import { imgArrayFirsrtBlock } from "../../../constants/constants";
 import { imgArraySecondBlock } from "../../../constants/constants";
@@ -7,17 +7,17 @@ const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroSectionContent}>
-        <div className={styles.heroText}>
+        <p className={styles.heroText}>
           Prepare to be transported beyond the boundaries of traditional gaming
           with the StarRunner Ecosystem - the beating heart that drives the
           adrenaline-charged galactic P2E odyssey of 'StarRunner.'
-        </div>
+        </p>
         <div className={styles.heroImages}>
-          <ImageAnimation
+          <HeroImage
             animationInterval={3000}
             imgArray={imgArrayFirsrtBlock}
           />
-          <ImageAnimation
+          <HeroImage
             animationInterval={3300}
             imgArray={imgArraySecondBlock}
           />

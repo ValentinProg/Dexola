@@ -7,19 +7,15 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        // object-position: 50% 0; // для картинок большого разришения
-  
         top: 0;
         left: 0;
      }
 }
 
-
-
 @media(max-width: 744px) {
     .imageContainer {
        img {
-        object-fit:fill;  // для картинок плохого качества
+        object-fit:fill;  
        }
     }
       }
@@ -27,9 +23,15 @@
 @media(max-width: 680px) {
     .imageContainer {
         padding: 155px 80px;
-        img {
-            object-fit: cover;  // для картинок плохого качества
-           }
+        
     }
       }
+
+      @media(max-width: 470px) {
+        .imageContainer {
+            img {
+                object-fit: cover;  
+               }
+        }
+          }
   

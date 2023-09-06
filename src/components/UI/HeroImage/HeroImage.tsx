@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import styles from "./ImageAnimation.module.scss";
+import styles from "./HeroImage.module.scss";
 import { motion } from "framer-motion";
 
-interface ImageAnimation {
+interface HeroImageProps {
   imgArray: string[];
   animationInterval: number;
 }
 
-const ImageAnimation = ({ imgArray, animationInterval }: ImageAnimation) => {
+const HeroImage = ({ imgArray, animationInterval }: HeroImageProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const ImageAnimation = ({ imgArray, animationInterval }: ImageAnimation) => {
   );
 };
 
-export default ImageAnimation;
+export default HeroImage;

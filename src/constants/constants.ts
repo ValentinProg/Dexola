@@ -4,6 +4,10 @@ import MysticSpellbook from "../assets/TableAvatars/MysticSpellbook.png";
 import CommonPotion from "../assets/TableAvatars/CommonPotion.png";
 import HeroicBlade from "../assets/TableAvatars/HeroicBlade.png";
 
+import cardImg1 from "../assets/CardImgs/cardImg1.png";
+import cardImg2 from "../assets/CardImgs/cardImg2.png";
+import cardImg3 from "../assets/CardImgs/cardImg3.png";
+
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import discord from "../assets/discord.svg";
@@ -21,17 +25,35 @@ import b2Img3 from "../assets/HeroImgsB2/b2i3.png";
 import b2Img4 from "../assets/HeroImgsB2/b2i4.png";
 import b2Img5 from "../assets/HeroImgsB2/b2i5.png";
 
-interface NFTs {
-  id: number;
-  avatar: string;
-  name: string;
-  level: string;
-  games: number;
-  wins: number;
-  price: number;
-}
+import { ICard } from "./types";
+import { INFT } from "./types";
+import { ILink } from "./types";
 
-export const NFTs: NFTs[] = [
+export const cardsArr: ICard[] = [
+  {
+    cardImg: cardImg1,
+    cardTitle: "STRU Token sale",
+    cardTitleNumber: "01",
+    cardText:
+      "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
+  },
+  {
+    cardImg: cardImg2,
+    cardTitle: "Stakinkg",
+    cardTitleNumber: "02",
+    cardText:
+      "Join a thriving community of stakers, united by their passion for exploration, strategy, and gaming.",
+  },
+  {
+    cardImg: cardImg3,
+    cardTitle: "NFT minting",
+    cardTitleNumber: "03",
+    cardText:
+      "Every StarRunner NFT tells a story - YOUR story. This NFT encapsulates the essence of your journey like never before.",
+  },
+];
+
+export const NFTs: INFT[] = [
   {
     id: 1,
     avatar: LegendaryArtifact,
@@ -79,14 +101,7 @@ export const NFTs: NFTs[] = [
   },
 ];
 
-interface links {
-  id: number;
-  name: string;
-  to: string;
-  imgPath: string;
-}
-
-export const links: links[] = [
+export const links: ILink[] = [
   {
     id: 1,
     name: "facebook",
@@ -131,6 +146,7 @@ export const imgArraySecondBlock: string[] = [
 
 export const regEmail =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 export const regPhone =
   /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
 export const regPassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
